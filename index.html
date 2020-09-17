@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Chuck Norris Joke's</title>
+<!--   <link rel="stylesheet" type="text/css" href="public/style.css" /> -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Work+Sans:200,500" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+  <script src="main.js"></script>
+</head>
+<body>
+  <header>
+  </header>
+  <main id="main">
+    <div class="container">
+      <h1>Ready for some jokes?</h1>
+        <button class="btn btn-primary" id="getJokes">
+             Get a Joke
+        </button>
+      <div id="jokes"></div>
+    </div>
+  </main>
+  <script>
+    document.getElementById('getJokes').addEventListener('click', getJokes);
+  </script>
+</body>
+</html>
