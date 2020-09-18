@@ -1,0 +1,31 @@
+// Variables
+$color-blue: #05B2DC;
+$color-white: #ffffff;
+$color-black: #000000;
+
+$space: 15px;
+$space-s: $space * 0.5;
+$space-m: $space * 1.5;
+
+
+
+// General
+body, html {
+  background-color: $color-blue !important; // important needed to overrule bootstrap styling
+}
+
+header {
+  height: 100px; // to gain some whitespace, delete if added a menu
+}
+
+h1 {
+  color: $color-white;
+  text-align: center;
+}
+
+
+// Components
+.jokes-wrapper {
+  background-color: $color-white;
+  padding: $space-m;
+}
