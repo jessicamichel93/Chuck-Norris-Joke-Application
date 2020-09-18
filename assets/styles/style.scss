@@ -1,7 +1,9 @@
 // Variables
 $color-blue: #05B2DC;
+$color-darkblue: #004385;
 $color-white: #ffffff;
 $color-black: #000000;
+
 $space: 15px;
 $space-s: $space * 0.5;
 $space-m: $space * 1.5;
@@ -32,7 +34,7 @@ h1 {
   font-size: 16px;
   padding: 10px 25px;
   border: 1px solid $color-white;
-  background: $color-blue;
+  background: $color-darkblue;
   margin-bottom: $space;
   border-radius: 25px;
   display: inline-block;
@@ -44,7 +46,7 @@ h1 {
   &:hover {
     background: transparent;
     border: 1px solid $color-blue;
-    color: $color-blue;
+    color: $color-darkblue;
   }
 
   &:active, &:focus {
@@ -53,12 +55,12 @@ h1 {
   }
 
   &.ghost {
-    border: 1px solid $color-blue;
+    border: 1px solid $color-darkblue;
     background: $color-white;
-    color: $color-blue;
+    color: $color-darkblue;
 
     &:hover {
-      background-color: $color-blue;
+      background-color: $color-darkblue;
       color: $color-white;
     }
   }
