@@ -2,15 +2,13 @@
 $color-blue: #05B2DC;
 $color-white: #ffffff;
 $color-black: #000000;
-
 $space: 15px;
 $space-s: $space * 0.5;
 $space-m: $space * 1.5;
 
-
-
 // General
-body, html {
+body,
+html {
   background-color: $color-blue !important; // important needed to overrule bootstrap styling
 }
 
@@ -21,11 +19,47 @@ header {
 h1 {
   color: $color-white;
   text-align: center;
+  font-family: 'Ranchers', cursive;
 }
-
-
 // Components
 .jokes-wrapper {
   background-color: $color-white;
   padding: $space-m;
+  margin-top: $space;
+}
+//Buttons
+.button {
+  font-size: 16px;
+  padding: 10px 25px;
+  border: 1px solid $color-white;
+  background: $color-blue;
+  margin-bottom: $space;
+  border-radius: 25px;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+  margin-right: 10px;
+  color: $color-white;
+  outline: 0;
+
+  &:hover {
+    background: transparent;
+    border: 1px solid $color-blue;
+    color: $color-blue;
+  }
+
+  &:active, &:focus {
+    outline: none;
+    border: none;
+  }
+
+  &.ghost {
+    border: 1px solid $color-blue;
+    background: $color-white;
+    color: $color-blue;
+
+    &:hover {
+      background-color: $color-blue;
+      color: $color-white;
+    }
+  }
 }
