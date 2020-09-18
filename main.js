@@ -6,7 +6,9 @@ button.addEventListener('click', getJokes);
 function getJokes() {
   let endpoint = 'http://api.icndb.com/jokes/random/';
   // sends request
-  fetch(endpoint)
+  fetch(endpoint, {
+      mode: 'no-cors'
+    })
     .then(response => {
       // converts response object to JSON
       if (response.ok) {
@@ -14,12 +16,13 @@ function getJokes() {
       }
     })
     .then(data => console.log(data))
-    .then(html => {
+    .then(data => {
+
       // Displaying it to the DOM
       const output = ` <h3>Jokes:</h3>
       <ul class="list-group mb-3" id="">
         <li class="list-group-item"><strong>ID:</strong> </li>
-        <li class="list-group-item"><strong>Body:</strong> </li>
+        <li class="list-group-item"><strong>Joke:</strong> </li>
       </ul>`;
       document.getElementById('jokes').innerHTML = output;
     })
